@@ -19,5 +19,5 @@ var score = 0
 func add_score ():
 	score += 1
 	points_label.text = "You just collected " + str(score) + " coins"
-	coin_counter.text = str(score)
+	coin_counter.text = str(score) + "/5"
 	

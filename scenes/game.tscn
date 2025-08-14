@@ -174,23 +174,6 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 distance = -154.0
 
-[sub_resource type="Animation" id="Animation_lnu2h"]
-resource_name = "platform_move"
-length = 1.5
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.46667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(260, 13), Vector2(331, 13)]
-}
-
 [sub_resource type="Animation" id="Animation_lbhrr"]
 length = 0.001
 tracks/0/type = "value"
@@ -220,6 +203,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(333, 64), Vector2(254, 64)]
+}
+
+[sub_resource type="Animation" id="Animation_lnu2h"]
+resource_name = "platform_move"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.46667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(260, 13), Vector2(331, 13)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iywne"]
@@ -352,6 +352,7 @@ layout_mode = 2
 
 [node name="coin_counter" type="Label" parent="CanvasLayer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.0188929, 0.0941377, 0.220746, 1)
 theme_override_fonts/font = ExtResource("2_gee14")
 theme_override_font_sizes/font_size = 32
-text = "0"
+text = "0/5"
